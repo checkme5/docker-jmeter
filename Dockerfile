@@ -1,8 +1,4 @@
-# inspired by https://github.com/hauptmedia/docker-jmeter  and
-# https://github.com/hhcordero/docker-jmeter-server/blob/master/Dockerfile
-FROM alpine:3.1.0
-
-# MAINTAINER Just van den Broecke<just@justobjects.nl>
+FROM openjdk:8-jre-slim
 
 ARG JMETER_VERSION="5.1.1"
 ENV JMETER_HOME /opt/apache-jmeter-${JMETER_VERSION}
